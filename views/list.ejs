@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css/style.css">
+    <title>List</title>
+</head>
+<body>
+    <h1><%=customListName%></h1>
+    <h3><%=date%></h3>
+    <h5>Make your List</h5>
+    <% for(var i=0; i<showItems.length; i++) { %>
+    <form class="eform" action="/delete" method="post">
+        <input type="checkbox" name="delone" value="<%=showItems[i]._id%>" onChange="this.form.submit()">
+        <p><%=showItems[i].name%></p>
+        <input type="hidden" name="delList" value="<%=customListName%>">
+    </form>
+    <% } %>
+    <form action="/" method="post">
+        <input type="text" name="insertItem">
+        <button type="submit" name="submit" value="<%=customListName%>">ADD</button>
+    </form>
+</body>
+</html>
