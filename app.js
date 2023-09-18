@@ -18,7 +18,7 @@ const options = {
 const day = today.toLocaleDateString("en-US", options);
 
 
-mongoose.connect("mongodb+srv://jacksonmongbam:admin@cluster0.9tdnyqw.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://jacksonmongbam123:bpheonix@bp.mhdihhd.mongodb.net/", {useNewUrlParser: true});
 
 const itemSchema = {
     name: String
