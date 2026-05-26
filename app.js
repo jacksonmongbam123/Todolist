@@ -19,7 +19,7 @@ const day = today.toLocaleDateString("en-US", options);
 
 mongoose.set('strictQuery', true);
 
-mongoose.connect("mongodb+srv://jacksonmongbam:admin@cluster0.hm9cfvd.mongodb.net/", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://jacksonmongbam123_db_user:FlBjxDzJUCGxbVky@cluster0.hm9cfvd.mongodb.net/", {useNewUrlParser: true});
 
 const itemSchema = {
     name: String
