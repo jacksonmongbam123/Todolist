@@ -17,6 +17,7 @@ const options = {
 };
 const day = today.toLocaleDateString("en-US", options);
 
+mongoose.set('strictQuery', true);
 
 mongoose.connect("mongodb+srv://jacksonmongbam123:bpheonix@bp.mhdihhd.mongodb.net/", {useNewUrlParser: true});
 
